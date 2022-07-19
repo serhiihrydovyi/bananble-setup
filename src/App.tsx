@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link, Route, Routes } from 'react-router-dom'
+import { Provider } from 'react-redux'
 
+import { store } from 'store'
 import Home from 'pages/Home/Home'
 import Settings from 'pages/Settings/Settings'
-import { Provider } from 'react-redux'
-import { setupStore } from 'store'
 
-import './App.less'
+import './App.css'
 
 const Navigation = () => (
   <div>
@@ -22,10 +22,7 @@ const Navigation = () => (
   </div>
 )
 
-const store = setupStore()
-
 const App: React.FC = () => {
-  console.log('app')
   return (
     <Provider store={store}>
       <>

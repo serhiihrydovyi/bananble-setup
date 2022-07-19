@@ -1,46 +1,63 @@
-# Getting Started with Create React App
+Project Description
+Front end web app / client for the Bananable Product Services.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Version
+0.1.0
 
-## Available Scripts
+Table of Contents
+Installation
+Creating .env file
+Build commands
+Run Commands
+Possible errors
+Links
+Author
+Installation
+Install Prerequisites
+Node Version = 14.x.x
+NPM Version = 7.x.x
+Install Commands
+After cloning repository go to project folder
 
-In the project directory, you can run:
+cd bananable-frontend
 
-### `npm start`
+And install packages with command
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+npm install
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Creating .env file
+You need to have .env.local file in root folder. You can copy it from .example.env and change <put_value_here> to real values. You should contact any of developers to provide you values for environment variables in this file. You will also need a .env.stage and .env.production to run app in staging and production environment.
 
-### `npm test`
+Build Commands
+Builds the app into the build folder.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Build for Development
+npm run build:dev
 
-### `npm run build`
+Build for Staging
+npm run build:stage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Build for Production
+npm run build:prod
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Run Commands
+Open http://localhost:3000 to view it in the browser. If 3000 port is already used app will asks to use 3001 port instead.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Run app in Debugging mode
+Run app in debug mode using dev env(no build required).
 
-### `npm run eject`
+npm run start
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Run app in Production mode
+Run previously created build with appropriate env.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm run serve
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Run Tests
+npm run test
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Links
+Runbook
+Repo
+Author
+Oril team
